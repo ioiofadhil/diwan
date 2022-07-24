@@ -5,8 +5,11 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="pub/style.css">
 		<link rel="stylesheet" href="pub/bootstrap.min.css">
 		<script src="pub/bootstrap.js"></script>
+		<script src="pub/jquery-3.6.0.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 		<title>Home</title>
 	</head>
 
@@ -15,15 +18,16 @@
 	<!-- main page -->
 
 	<!-- navbar start -->
-    <div id="navbar" class="bg-dark bg-opacity-50 px-0 w-100 position-fixed">
-		<div class="container-fluid py-3">
-			<div class="row text-center px-0">
-				<div class="col-6 px-0">
-					<img src="image/union.png" width="70" height="35" alt="">
+    <div id="navbar" class="bg-dark bg-opacity-50 px-0 w-100 position-fixed" style="z-index: 1;">
+		<div class="container py-3">
+			<div class="row px-0">
+				<div class="col-6 px-0 align-self-center">
+					<img src="pub/images/Top/UP Logo.png" width="140" height="25" alt="UnionPay">
 				</div>
-				<div class="col-6 text-white px-0 fw-lighter">
-					<h6 class="mt-2"><span class="pe-2">文字长</span><span>|</span><span class="px-2">EN</span><span class="fw-lighter">|</span><span class="ps-2">短</span></h6>
+				<div class="col-5 text-end text-white px-0 align-self-center">
+					<h2 class="fs-6 fw-light nav-right my-0"><span class="pe-2">标题文本</span><span class="">|</span><span class="px-2">EN</span><span class="">|</span><span class="ps-2">标题文本</span></h2>
 				</div>
+				<div class="col-1 align-self-center fs-4"><a class="text-white lh-sm"><i class="bi bi-list"></i></a></div>
 			</div>
 		</div>
 	</div>
@@ -31,11 +35,11 @@
 
 	<!-- landing start -->
 	<div id="landing" class="bg-dark" style="height: 600px;">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row text-center px-0">
 				<div class="col px-0 mt-5 pt-5">
-					<h1 class="fw-lighter text-white fs-3">
-						<span class="pe-2">短</span><span class="fw-bold">&middot;</span><span class="ps-2">文字长</span>
+					<h1 class="fw-normal text-white fs-4">
+						<span class="pe-2">标题文本</span><span class="fw-bold">&middot;</span><span class="ps-2">标题文本</span>
 					</h1>
 				</div>
 			</div>
@@ -44,11 +48,209 @@
 	<!-- landing end -->
 
 	<!-- card start -->
-
-	<div id="card" class="bg-success" style="height: 600px;"></div>
-
+	<div id="card" class="bg-success py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mb-4">
+					<h2 class="text-white fw-normal fs-4 text-center">标题文本</h2>
+				</div>
+				<div class="col-1 position-relative">
+					<div class="position-absolute top-50 start-50 translate-middle">
+						<a>
+							<i class="bi bi-chevron-compact-left text-white fs-3"></i>
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card w-100 shadow-lg border-0" style="border-radius: 30px;">
+						<img src="pub/images/Store/Banners1.png" class="card-img-top" style="border-radius: 30px 30px 0px 0px;" height="200" alt="">
+						<div class="card-body text-center">
+							<img src="pub/images/Store/Banners1_brand.png" width="120" height="40" alt="">
+						</div>
+						<div class="card-footer text-center bg-white border-0" style="border-radius: 0px 0px 30px 30px;">
+							<h5 class="card-title fs-6">标题文本</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card w-100 shadow-lg border-0" style="border-radius: 30px;">
+						<img src="pub/images/Store/Banners2.png" class="card-img-top" style="border-radius: 30px 30px 0px 0px;" height="200" alt="">
+						<div class="card-body text-center">
+							<img src="pub/images/Store/Banners2_brand.png" width="150" height="50" alt="">
+						</div>
+						<div class="card-footer text-center bg-white border-0" style="border-radius: 0px 0px 30px 30px;">
+							<h5 class="card-title fs-6">标题文本</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card w-100 shadow-lg border-0" style="border-radius: 30px;">
+						<img src="pub/images/Store/Banners3.png" class="card-img-top" style="border-radius: 30px 30px 0px 0px;" height="200" alt="">
+						<div class="card-body text-center">
+							<img src="pub/images/Store/Banners3_brand.png" width="150" height="40" alt="">
+						</div>
+						<div class="card-footer text-center bg-white border-0" style="border-radius: 0px 0px 30px 30px;">
+							<h5 class="card-title fs-6">标题文本</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card w-100 shadow-lg border-0" style="border-radius: 30px;">
+						<img src="pub/images/Store/Banners4.png" class="card-img-top" style="border-radius: 30px 30px 0px 0px;" height="200" alt="">
+						<div class="card-body text-center">
+							<img src="pub/images/Store/Banners4_brand.png" width="150" height="40" alt="">
+						</div>
+						<div class="card-footer text-center bg-white border-0" style="border-radius: 0px 0px 30px 30px;">
+							<h5 class="card-title fs-6">标题文本</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-1 position-relative">
+					<div class="position-absolute top-50 start-50 translate-middle">
+						<a>
+							<i class="bi bi-chevron-compact-right text-white fs-3"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- card end -->
 
+	<!-- emote start -->
+	<div id="emote" class="bg-white py-5">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-12 mb-4">
+					<h2 class="text-danger fw-normal fs-4">标题文本</h2>
+				</div>
+				<div class="col-1"></div>
+				<div class="px-0 col">
+					<img src="pub/images/Offering Services/A1.png" width="40" height="40" alt="">
+					<p class="text-danger py-0 my-2">标题文本</p>
+					<a href=""><img id="os-1" src="pub/images/Offering Services/A2.png" width="50" height="20" alt=""></a>
+				</div>
+				<div class="px-0 col">
+					<img src="pub/images/Offering Services/B1.png" width="40" height="40" alt="">
+					<p class="text-dark-blue py-0 my-2">标题文本</p>
+					<a href=""><img id="os-2" src="pub/images/Offering Services/B2.png" width="50" height="20" alt=""></a>
+				</div>
+				<div class="px-0 col">
+					<img src="pub/images/Offering Services/C1.png" width="40" height="40" alt="">
+					<p class="text-dark-green py-0 my-2">标题文本</p>
+					<a href=""><img id="os-3" src="pub/images/Offering Services/C2.png" width="50" height="20" alt=""></a>
+				</div>
+				<div class="px-0 col">
+					<img src="pub/images/Offering Services/D1.png" width="40" height="40" alt="">
+					<p class="text-pink py-0 my-2">标题文本</p>
+					<a href=""><img id="os-4" src="pub/images/Offering Services/D2.png" width="50" height="20" alt=""></a>
+				</div>
+				<div class="px-0 col">
+					<img src="pub/images/Offering Services/E1.png" width="40" height="40" alt="">
+					<p class="text-light-blue py-0 my-2">标题文本</p>
+					<a href=""><img id="os-5" src="pub/images/Offering Services/E2.png" width="50" height="20" alt=""></a>
+				</div>
+				<div class="px-0 col">
+					<img src="pub/images/Offering Services/F1.png" width="40" height="40" alt="">
+					<p class="text-light-brown py-0 my-2">标题文本</p>
+					<a href=""><img id="os-6" src="pub/images/Offering Services/F2.png" width="50" height="20" alt=""></a>
+				</div>
+				<div class="px-0 col">
+					<img src="pub/images/Offering Services/G1.png" width="40" height="40" alt="">
+					<p class="text-light-grey py-0 my-2">标题文本</p>
+					<a href=""><img id="os-7" src="pub/images/Offering Services/G2.png" width="50" height="20" alt=""></a>
+				</div>
+			<div class="col-1"></div>
+			</div>
+		</div>
+	</div>
+	<!-- emote end -->
+
+	<!-- footer start -->
+	<div id="footer" class="bg-danger pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-3">
+					<img class="me-4" src="pub/images/Bottom/Phone Logo.png" width="270" alt="">
+				</div>
+				<div class="col">
+					<div class="d-flex flex-column mt-5">
+						<div id="footer-header" class="text-center"><span class="text-white fs-3 fw-normal">标题文本App!</span></div>
+						<div id="image-wrapper">
+							<img class="me-3 mt-3" src="pub/images/Bottom/UP Logo Bottom.png" width="150" alt="">
+							<img class="me-3 mt-3" src="pub/images/Bottom/QRCode.png" width="150" alt="">
+							<img class="me-3 mt-3" src="pub/images/Bottom/Store.png" width="150" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+	</div>
+	<!-- footer end -->
+
+	<!-- dark footer start -->
+	<div id="dark" class="bg-dark text-white py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center fs-7">
+					<span class="fw-lighter">Copyright &copy; 2022 UnionPay [Hong Kong] Company Ltd. All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- dark footer end -->
+
+	<!-- JavaScript start -->
+		<script>
+			$(document).ready(function(){
+
+				$("#os-1").hover(function(){  
+					$(this).attr('src','pub/images/Offering Services/A3.png');  
+					}, function(){  
+					$(this).attr('src','pub/images/Offering Services/A2.png');  
+				});
+
+				$("#os-2").hover(function(){  
+					$(this).attr('src','pub/images/Offering Services/B3.png');  
+					}, function(){  
+					$(this).attr('src','pub/images/Offering Services/B2.png');  
+				});
+
+				$("#os-3").hover(function(){  
+					$(this).attr('src','pub/images/Offering Services/C3.png');  
+					}, function(){  
+					$(this).attr('src','pub/images/Offering Services/C2.png');  
+				});
+
+				$("#os-4").hover(function(){  
+					$(this).attr('src','pub/images/Offering Services/D3.png');  
+					}, function(){  
+					$(this).attr('src','pub/images/Offering Services/D2.png');  
+				});
+
+				$("#os-5").hover(function(){  
+					$(this).attr('src','pub/images/Offering Services/E3.png');  
+					}, function(){  
+					$(this).attr('src','pub/images/Offering Services/E2.png');  
+				});
+
+				$("#os-6").hover(function(){  
+					$(this).attr('src','pub/images/Offering Services/F3.png');  
+					}, function(){  
+					$(this).attr('src','pub/images/Offering Services/F2.png');  
+				});
+
+				$("#os-7").hover(function(){  
+					$(this).attr('src','pub/images/Offering Services/G3.png');  
+					}, function(){  
+					$(this).attr('src','pub/images/Offering Services/G2.png');  
+				});
+
+			}); 
+		</script>
+	<!-- JavaScript end-->
 	</body>
 
 </html>
